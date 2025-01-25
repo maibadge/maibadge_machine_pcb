@@ -1777,458 +1777,6 @@
 				)
 			)
 		)
-		(symbol "amaibear:MPR121QR2"
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "U"
-				(at 0 1.27 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "MPR121QR2"
-				(at 0 -2.54 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" "easyeda-footprint:QFN-20_L3.0-W3.0-P0.40-BL"
-				(at 0 -10.16 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-						(italic yes)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "https://cn.bing.com/search?q=datasheet：MPR121"
-				(at -2.286 0.127 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-					(hide yes)
-				)
-			)
-			(property "Description" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "LCSC" "C91322"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "C91322"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "MPR121QR2_0_1"
-				(rectangle
-					(start -8.89 13.97)
-					(end 8.89 -13.97)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type background)
-					)
-				)
-				(circle
-					(center -7.62 12.7)
-					(radius 0.381)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type background)
-					)
-				)
-				(pin unspecified line
-					(at -11.43 11.43 0)
-					(length 2.54)
-					(name "IRQ#"
-						(effects
-							(font
-								(size 1 1)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1 1)
-							)
-						)
-					)
-				)
-				(pin unspecified line
-					(at -11.43 -11.43 0)
-					(length 2.54)
-					(name "ELE2"
-						(effects
-							(font
-								(size 1 1)
-							)
-						)
-					)
-					(number "10"
-						(effects
-							(font
-								(size 1 1)
-							)
-						)
-					)
-				)
-				(pin unspecified line
-					(at 11.43 -11.43 180)
-					(length 2.54)
-					(name "ELE3"
-						(effects
-							(font
-								(size 1 1)
-							)
-						)
-					)
-					(number "11"
-						(effects
-							(font
-								(size 1 1)
-							)
-						)
-					)
-				)
-				(pin unspecified line
-					(at 11.43 -8.89 180)
-					(length 2.54)
-					(name "ELE4"
-						(effects
-							(font
-								(size 1 1)
-							)
-						)
-					)
-					(number "12"
-						(effects
-							(font
-								(size 1 1)
-							)
-						)
-					)
-				)
-				(pin unspecified line
-					(at 11.43 -6.35 180)
-					(length 2.54)
-					(name "ELE5"
-						(effects
-							(font
-								(size 1 1)
-							)
-						)
-					)
-					(number "13"
-						(effects
-							(font
-								(size 1 1)
-							)
-						)
-					)
-				)
-				(pin unspecified line
-					(at 11.43 -3.81 180)
-					(length 2.54)
-					(name "ELE6"
-						(effects
-							(font
-								(size 1 1)
-							)
-						)
-					)
-					(number "14"
-						(effects
-							(font
-								(size 1 1)
-							)
-						)
-					)
-				)
-				(pin unspecified line
-					(at 11.43 -1.27 180)
-					(length 2.54)
-					(name "ELE7"
-						(effects
-							(font
-								(size 1 1)
-							)
-						)
-					)
-					(number "15"
-						(effects
-							(font
-								(size 1 1)
-							)
-						)
-					)
-				)
-				(pin unspecified line
-					(at 11.43 1.27 180)
-					(length 2.54)
-					(name "ELE8"
-						(effects
-							(font
-								(size 1 1)
-							)
-						)
-					)
-					(number "16"
-						(effects
-							(font
-								(size 1 1)
-							)
-						)
-					)
-				)
-				(pin unspecified line
-					(at 11.43 3.81 180)
-					(length 2.54)
-					(name "ELE9"
-						(effects
-							(font
-								(size 1 1)
-							)
-						)
-					)
-					(number "17"
-						(effects
-							(font
-								(size 1 1)
-							)
-						)
-					)
-				)
-				(pin unspecified line
-					(at 11.43 6.35 180)
-					(length 2.54)
-					(name "ELE10"
-						(effects
-							(font
-								(size 1 1)
-							)
-						)
-					)
-					(number "18"
-						(effects
-							(font
-								(size 1 1)
-							)
-						)
-					)
-				)
-				(pin unspecified line
-					(at 11.43 8.89 180)
-					(length 2.54)
-					(name "ELE11"
-						(effects
-							(font
-								(size 1 1)
-							)
-						)
-					)
-					(number "19"
-						(effects
-							(font
-								(size 1 1)
-							)
-						)
-					)
-				)
-				(pin unspecified line
-					(at -11.43 8.89 0)
-					(length 2.54)
-					(name "SCL"
-						(effects
-							(font
-								(size 1 1)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1 1)
-							)
-						)
-					)
-				)
-				(pin unspecified line
-					(at 11.43 11.43 180)
-					(length 2.54)
-					(name "VDD"
-						(effects
-							(font
-								(size 1 1)
-							)
-						)
-					)
-					(number "20"
-						(effects
-							(font
-								(size 1 1)
-							)
-						)
-					)
-				)
-				(pin unspecified line
-					(at -11.43 6.35 0)
-					(length 2.54)
-					(name "SDA"
-						(effects
-							(font
-								(size 1 1)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1 1)
-							)
-						)
-					)
-				)
-				(pin unspecified line
-					(at -11.43 3.81 0)
-					(length 2.54)
-					(name "ADDR"
-						(effects
-							(font
-								(size 1 1)
-							)
-						)
-					)
-					(number "4"
-						(effects
-							(font
-								(size 1 1)
-							)
-						)
-					)
-				)
-				(pin unspecified line
-					(at -11.43 1.27 0)
-					(length 2.54)
-					(name "VREG"
-						(effects
-							(font
-								(size 1 1)
-							)
-						)
-					)
-					(number "5"
-						(effects
-							(font
-								(size 1 1)
-							)
-						)
-					)
-				)
-				(pin unspecified line
-					(at -11.43 -1.27 0)
-					(length 2.54)
-					(name "VSS"
-						(effects
-							(font
-								(size 1 1)
-							)
-						)
-					)
-					(number "6"
-						(effects
-							(font
-								(size 1 1)
-							)
-						)
-					)
-				)
-				(pin unspecified line
-					(at -11.43 -3.81 0)
-					(length 2.54)
-					(name "REXT"
-						(effects
-							(font
-								(size 1 1)
-							)
-						)
-					)
-					(number "7"
-						(effects
-							(font
-								(size 1 1)
-							)
-						)
-					)
-				)
-				(pin unspecified line
-					(at -11.43 -6.35 0)
-					(length 2.54)
-					(name "ELE0"
-						(effects
-							(font
-								(size 1 1)
-							)
-						)
-					)
-					(number "8"
-						(effects
-							(font
-								(size 1 1)
-							)
-						)
-					)
-				)
-				(pin unspecified line
-					(at -11.43 -8.89 0)
-					(length 2.54)
-					(name "ELE1"
-						(effects
-							(font
-								(size 1 1)
-							)
-						)
-					)
-					(number "9"
-						(effects
-							(font
-								(size 1 1)
-							)
-						)
-					)
-				)
-			)
-		)
 		(symbol "ask6812:SK6812SIDE-A-RVS"
 			(exclude_from_sim no)
 			(in_bom yes)
@@ -3182,16 +2730,6 @@
 	)
 	(wire
 		(pts
-			(xy 205.74 142.24) (xy 207.01 142.24)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "68839da1-6c67-4c50-97be-26f94e8ba229")
-	)
-	(wire
-		(pts
 			(xy 193.04 77.47) (xy 219.71 77.47)
 		)
 		(stroke
@@ -3239,6 +2777,16 @@
 			(type default)
 		)
 		(uuid "7a8f5677-4f9c-472b-b475-1490fe5972df")
+	)
+	(wire
+		(pts
+			(xy 82.55 83.82) (xy 100.33 83.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7e1d5350-04ca-4a29-ae8d-c02d9a1f5976")
 	)
 	(polyline
 		(pts
@@ -3292,7 +2840,7 @@
 	)
 	(wire
 		(pts
-			(xy 146.05 123.19) (xy 156.21 123.19)
+			(xy 142.24 123.19) (xy 156.21 123.19)
 		)
 		(stroke
 			(width 0)
@@ -3342,7 +2890,7 @@
 	)
 	(wire
 		(pts
-			(xy 144.78 115.57) (xy 156.21 115.57)
+			(xy 137.16 115.57) (xy 156.21 115.57)
 		)
 		(stroke
 			(width 0)
@@ -3482,26 +3030,6 @@
 	)
 	(wire
 		(pts
-			(xy 204.47 134.62) (xy 207.01 134.62)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b4198534-bcbb-4632-ba43-e9c9e467bc7b")
-	)
-	(wire
-		(pts
-			(xy 204.47 132.08) (xy 207.01 132.08)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b6cd87f0-3736-4929-b63e-6ed3bd2d5b95")
-	)
-	(wire
-		(pts
 			(xy 92.71 81.28) (xy 100.33 81.28)
 		)
 		(stroke
@@ -3559,16 +3087,6 @@
 			(type default)
 		)
 		(uuid "ce74d14e-70f7-4bf7-9d91-ac0c4402db1e")
-	)
-	(wire
-		(pts
-			(xy 229.87 129.54) (xy 231.14 129.54)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d0f57564-fd52-4b6d-b088-960f793c0c08")
 	)
 	(wire
 		(pts
@@ -3723,19 +3241,6 @@
 		)
 		(uuid "3716769f-e9d4-45ae-9084-6102f02981b7")
 	)
-	(text "capacitive touch"
-		(exclude_from_sim no)
-		(at 223.012 103.632 0)
-		(effects
-			(font
-				(face "Consolas")
-				(size 3 3)
-				(thickness 0.6)
-				(bold yes)
-			)
-		)
-		(uuid "4609e79f-9b4a-44fa-9b5a-b1ed10ec0789")
-	)
 	(text "Buttons"
 		(exclude_from_sim no)
 		(at 41.402 77.724 0)
@@ -3827,16 +3332,6 @@
 		)
 		(uuid "c1fcc619-aafb-4726-b4aa-e7c26ef31394")
 	)
-	(text "(not using MPR121 as ESP32 has built-in capacitive touch) \n"
-		(exclude_from_sim no)
-		(at 233.426 109.22 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "c9f08bcf-d3d1-4197-9945-88d2cd1aad2b")
-	)
 	(text "Display"
 		(exclude_from_sim no)
 		(at 41.148 24.638 0)
@@ -3904,6 +3399,17 @@
 			(justify left bottom)
 		)
 		(uuid "26bf048a-7177-4ef4-9df9-359b5143c9f6")
+	)
+	(label "main led DIN"
+		(at 82.55 83.82 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "2c03dd1b-bd37-4d9c-a0c0-797bb9d3b883")
 	)
 	(label "OLED_RST"
 		(at 54.61 60.96 0)
@@ -3993,17 +3499,6 @@
 		)
 		(uuid "73398568-3eb1-4120-9707-61516aaa6181")
 	)
-	(label "MPR SDA"
-		(at 204.47 134.62 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "737aba2c-479c-4f57-8ac9-9b461dff8b24")
-	)
 	(label "button 2"
 		(at 59.69 102.87 0)
 		(fields_autoplaced yes)
@@ -4048,8 +3543,8 @@
 		)
 		(uuid "8d98c140-c926-4890-b50f-b2aa2b4b8bcc")
 	)
-	(label "main led DIN"
-		(at 135.89 76.2 0)
+	(label "buzzer"
+		(at 132.08 83.82 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -4057,7 +3552,7 @@
 			)
 			(justify left bottom)
 		)
-		(uuid "8e9b2f8d-d357-4e69-8b60-d47a64241fd3")
+		(uuid "959e3008-a6e7-4c8c-b4e0-47842898f219")
 	)
 	(label "OLED_SCL"
 		(at 92.71 81.28 180)
@@ -4069,17 +3564,6 @@
 			(justify right bottom)
 		)
 		(uuid "9e4ed404-f714-496c-8d32-b19652570207")
-	)
-	(label "buzzer"
-		(at 135.89 71.12 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "a15bd534-1145-46ac-bb10-a0b75e54e761")
 	)
 	(label "CHIP_PU"
 		(at 93.98 40.64 180)
@@ -4102,28 +3586,6 @@
 			(justify right bottom)
 		)
 		(uuid "ae007724-b38d-4efb-b7ed-11e7863d1eb4")
-	)
-	(label "MPR SDA"
-		(at 132.08 83.82 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "b1daa1df-6772-4feb-928c-b45ccd4e3058")
-	)
-	(label "MPR SCL"
-		(at 132.08 86.36 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "b6076d77-a731-463b-afc5-85958df9386f")
 	)
 	(label "buzzer"
 		(at 31.75 147.32 0)
@@ -4168,17 +3630,6 @@
 			(justify right bottom)
 		)
 		(uuid "cf6e67fe-eecf-4638-a684-395a128cc39b")
-	)
-	(label "MPR SCL"
-		(at 204.47 132.08 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "d5e12a23-2f0d-45b7-b4e7-9a5d89cf7458")
 	)
 	(symbol
 		(lib_id "power:+3.3V")
@@ -4399,139 +3850,6 @@
 		)
 	)
 	(symbol
-		(lib_id "amaibear:MPR121QR2")
-		(at 218.44 140.97 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "13cbe520-05c1-4b52-bb28-292d6bd78913")
-		(property "Reference" "U11"
-			(at 218.44 121.92 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "MPR121QR2"
-			(at 218.44 124.46 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Maibadge_Howard:QFN-20_L3.0-W3.0-P0.40-BL"
-			(at 218.44 151.13 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://cn.bing.com/search?q=datasheet：MPR121"
-			(at 216.154 140.843 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 218.44 140.97 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC" "C91322"
-			(at 218.44 140.97 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "13"
-			(uuid "edbeeb9a-3b96-4985-ae00-944d9a9c2694")
-		)
-		(pin "3"
-			(uuid "52361c8f-037c-4997-b3e3-08208a2e0101")
-		)
-		(pin "15"
-			(uuid "69ecfdf0-9078-4141-bb44-2772d89934ad")
-		)
-		(pin "9"
-			(uuid "3d0e072a-7671-4580-9272-843e9dfbfb83")
-		)
-		(pin "20"
-			(uuid "9de7873c-b3c6-4aae-a035-2e17d0f649f0")
-		)
-		(pin "19"
-			(uuid "ae4a953d-4a02-4984-ae03-6f325a43b3f8")
-		)
-		(pin "17"
-			(uuid "af574ab3-8eba-42bb-a091-15b21319ca05")
-		)
-		(pin "1"
-			(uuid "f9d76b42-1918-4761-8caf-f51fe31a217f")
-		)
-		(pin "10"
-			(uuid "3d4535ad-c36f-4fac-86fb-308ceadb37fc")
-		)
-		(pin "4"
-			(uuid "8ad81002-6b62-4032-a381-446e1b318d75")
-		)
-		(pin "14"
-			(uuid "27ac9dda-eee9-421b-8e70-5e88889bad45")
-		)
-		(pin "18"
-			(uuid "83ad2bdd-12bf-4f38-ae6e-f7e47fea02cf")
-		)
-		(pin "8"
-			(uuid "65cb3572-70f6-4bce-80e2-b33e585de4e4")
-		)
-		(pin "6"
-			(uuid "b2b571d1-7617-4b7b-a773-ed91c5f03913")
-		)
-		(pin "11"
-			(uuid "72e8ff56-60cf-43f7-b998-86f11176dc61")
-		)
-		(pin "2"
-			(uuid "174bbf8c-a848-4f48-98b2-0e372470645b")
-		)
-		(pin "16"
-			(uuid "55dd6d26-0302-4e34-9167-2579607d5462")
-		)
-		(pin "5"
-			(uuid "03ebdbe0-81c1-40db-a1d4-1aa1a6ce4d64")
-		)
-		(pin "7"
-			(uuid "8e5283d3-a44f-4451-a9ea-41ed42874753")
-		)
-		(pin "12"
-			(uuid "69ff0eac-2545-4458-980b-ca56cfeb5191")
-		)
-		(instances
-			(project "maibadge_ver2"
-				(path "/db5acf66-7483-40ad-bed5-d22104f62da7"
-					(reference "U11")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 175.26 158.75 0)
 		(unit 1)
@@ -4592,6 +3910,72 @@
 			(project "maibadge_ver2"
 				(path "/db5acf66-7483-40ad-bed5-d22104f62da7"
 					(reference "#PWR022")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 137.16 115.57 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "19322301-0c20-4e91-9783-5faf060e649b")
+		(property "Reference" "#PWR016"
+			(at 137.16 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 137.16 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 137.16 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 137.16 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 137.16 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "45a6a332-9580-49d1-93f6-6b936400b1f5")
+		)
+		(instances
+			(project "maibadge_ver2"
+				(path "/db5acf66-7483-40ad-bed5-d22104f62da7"
+					(reference "#PWR016")
 					(unit 1)
 				)
 			)
@@ -5144,73 +4528,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+3.3V")
-		(at 231.14 129.54 270)
-		(mirror x)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "3810dbf2-2754-4104-80e8-b295c2b59adb")
-		(property "Reference" "#PWR029"
-			(at 227.33 129.54 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+3.3V"
-			(at 234.95 129.5399 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 231.14 129.54 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 231.14 129.54 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
-			(at 231.14 129.54 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "5fde208c-5e92-4a99-a469-dce8173957ef")
-		)
-		(instances
-			(project "maibadge_ver2"
-				(path "/db5acf66-7483-40ad-bed5-d22104f62da7"
-					(reference "#PWR029")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 38.1 95.25 270)
 		(unit 1)
@@ -5556,6 +4873,72 @@
 			(project "maibadge_ver2"
 				(path "/db5acf66-7483-40ad-bed5-d22104f62da7"
 					(reference "#PWR06")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3.3V")
+		(at 142.24 123.19 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "509930ad-a63f-4297-96a8-df97839471bf")
+		(property "Reference" "#PWR014"
+			(at 142.24 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+5V"
+			(at 142.24 118.11 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 142.24 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 142.24 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
+			(at 142.24 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "437942d4-2aa5-4827-b684-f82976af7370")
+		)
+		(instances
+			(project "maibadge_ver2"
+				(path "/db5acf66-7483-40ad-bed5-d22104f62da7"
+					(reference "#PWR014")
 					(unit 1)
 				)
 			)
@@ -6270,72 +5653,6 @@
 			(project "maibadge_ver2"
 				(path "/db5acf66-7483-40ad-bed5-d22104f62da7"
 					(reference "R4")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 205.74 142.24 270)
-		(mirror x)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "92899fa2-5c95-4d96-bdeb-1874494f6ed2")
-		(property "Reference" "#PWR024"
-			(at 199.39 142.24 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 200.66 142.24 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 205.74 142.24 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 205.74 142.24 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 205.74 142.24 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "f2f8e5c1-9595-406d-be87-0441803e16ce")
-		)
-		(instances
-			(project "maibadge_ver2"
-				(path "/db5acf66-7483-40ad-bed5-d22104f62da7"
-					(reference "#PWR024")
 					(unit 1)
 				)
 			)
@@ -7099,72 +6416,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
-		(at 146.05 123.19 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "c434dbc6-94df-4a12-9175-8ed1dcf46a70")
-		(property "Reference" "#PWR016"
-			(at 146.05 129.54 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 146.05 128.27 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 146.05 123.19 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 146.05 123.19 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 146.05 123.19 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "70a419ea-a113-4599-88ec-a6812e0a4bc1")
-		)
-		(instances
-			(project "maibadge_ver2"
-				(path "/db5acf66-7483-40ad-bed5-d22104f62da7"
-					(reference "#PWR016")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:+3.3V")
 		(at 115.57 118.11 270)
 		(unit 1)
@@ -7596,72 +6847,6 @@
 			(project "maibadge_ver2"
 				(path "/db5acf66-7483-40ad-bed5-d22104f62da7"
 					(reference "BZ1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+3.3V")
-		(at 144.78 115.57 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "e650a5c2-15db-45c7-bd6d-effdb66a87a4")
-		(property "Reference" "#PWR014"
-			(at 144.78 119.38 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+5V"
-			(at 144.78 110.49 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 144.78 115.57 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 144.78 115.57 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
-			(at 144.78 115.57 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "b6d37a97-267f-4fdb-aeaa-43c68d536032")
-		)
-		(instances
-			(project "maibadge_ver2"
-				(path "/db5acf66-7483-40ad-bed5-d22104f62da7"
-					(reference "#PWR014")
 					(unit 1)
 				)
 			)
