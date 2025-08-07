@@ -2,20 +2,37 @@ from hardware.buttons import buttons
 from apps.template import AppTemplate
 import hardware.vga1_8x16 as smallfont
 import gc9a01
-from machine import Timer
+from machine import Timer, Pin
 import time
 
 from apps.maiface import MaiFace
 from apps.maigame import MaiGame
 from apps.maisong import *
 
+################################################################################
+previous_button_press = 0
+def enable_handlers(function, ref):
+    def handler(pin):
+        # Software debouncing logic (100ms)
+        global previous_button_press
+        if (time.ticks_ms() - previous_button_press) < 300:
+            previous_button_press = time.ticks_ms()
+            return
+        previous_button_press = time.ticks_ms()
+        function(pin)
+    
+    for b in ref["buttons"].values():
+        b.irq(trigger=Pin.IRQ_FALLING, handler=handler) #detect pull down
+################################################################################
 
 colour_index = 0
 class MaiMenu(AppTemplate):
     def __init__(self, hardware):
         super().__init__(hardware)
         self.app_index = 0
-        self.apps = ["face", "led", "buzzintro", "buzzeye", "buzzqz", "buzzmario", "game"]
+        self.apps = ["face", 
+                     #"led", 
+                     "buzzintro", "buzzeye", "buzzqz", "buzzmario", "game"]
  
     def display_menu(self):
         self.hardware["face"]["tft"].jpg("./images/menu_graphics/menu_foreground.jpg", 0, 0) 
@@ -116,13 +133,29 @@ class MaiMenu(AppTemplate):
         if display: self.display_menu()
         self.tim0 = Timer(0)
         self.tim0.init(period=1000, mode=Timer.PERIODIC, callback=self.touchpads)
+        ##########################################################################
+        enable_handlers(self.on_press, self.hardware)
+        ##########################################################################
         
     def unload(self):
         self.tim0.deinit()
 #        mg = MaiGame(self.hardware)
 #        mg.load()        
+        ##########################################################################
+        # Clear interrupts
+        ref = self.hardware
+        for b in ref["buttons"].values():
+            b.irq(trigger=Pin.IRQ_FALLING, handler=None)
+        ##########################################################################
 
     def on_press(self, pin): #button debugging
-        pass
+        ### Extra Code for ######################################################
+        if pin == buttons['A']: # enter button
+            self.run_app()
+        elif pin == buttons['B']: # enter button
+            mm = self
+            mm.app_index = (mm.app_index+1) % len(mm.apps)
+            mm.load()
+        #########################################################################
 
 

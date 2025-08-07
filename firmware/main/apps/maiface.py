@@ -3,9 +3,10 @@ from apps.template import AppTemplate
 from machine import Timer, Pin
 import time
 
-img = ["./images/maibear1.jpg", "./images/maibear_study_atb.jpg", "./images/maibear_og.jpg",
-       "./images/maibear_clown.jpg", "./images/maibear2.jpg", "./images/maibear_study_work_harder.jpg",  "./images/maibear_study_water_thing.jpg",
-       "./images/menu_graphics/menu_foreground_1.jpg", "./images/maisongselect.jpg", "./images/maisongchosen.jpg", "./images/maigameplay1.jpg", "./images/maigameplay2.jpg"]
+img = [
+        #"./images/maibear1.jpg", "./images/maibear_study_atb.jpg", "./images/maibear_og.jpg",
+       #"./images/maibear_clown.jpg", "./images/maibear2.jpg", "./images/maibear_study_work_harder.jpg",  "./images/maibear_study_water_thing.jpg",
+       "./images/maisongselect.jpg", "./images/menu_graphics/menu_foreground_1.jpg",  "./images/maisongchosen.jpg", "./images/maigameplay1.jpg", "./images/maigameplay2.jpg"]
 
 
 previous_button_press = 0
@@ -72,3 +73,9 @@ class MaiFace(AppTemplate):
             self.image_index = (self.image_index+1) % len(img)
             print(img[self.image_index])
             self.hardware["face"]["tft"].jpg(img[self.image_index], 0, 0)
+
+        ### Extra Code for ######################################################
+        if pin == buttons['A']: 
+            # open maiface app
+            self.unload()
+        #########################################################################
