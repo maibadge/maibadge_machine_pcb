@@ -1,6 +1,6 @@
 from machine import Pin, PWM
 
-buzzer_pin = Pin(47, Pin.OUT)
+buzzer_pin = Pin(40, Pin.OUT)
 buzzer = PWM(buzzer_pin, duty_u16=0)
 
 def on(freq, duty=32767):

@@ -2,11 +2,29 @@ from hardware.buttons import buttons
 from apps.template import AppTemplate
 from machine import Timer, Pin
 import time
+import gc
 
 img = [
         #"./images/maibear1.jpg", "./images/maibear_study_atb.jpg", "./images/maibear_og.jpg",
        #"./images/maibear_clown.jpg", "./images/maibear2.jpg", "./images/maibear_study_work_harder.jpg",  "./images/maibear_study_water_thing.jpg",
-       "./images/maisongselect.jpg", "./images/menu_graphics/menu_foreground_1.jpg",  "./images/maisongchosen.jpg", "./images/maigameplay1.jpg", "./images/maigameplay2.jpg"]
+       "./images/maisongselect.jpg",  "./images/maisongchosen.jpg", "./images/maigameplay1.jpg", "./images/maigameplay2.jpg",
+       "./images/screenimages/m1.jpg",
+       "./images/screenimages/m2.jpg",
+       "./images/screenimages/m3.jpg",
+       "./images/screenimages/cc1.jpg",
+       "./images/screenimages/cc2.jpg",
+       "./images/screenimages/cc3.jpg",
+       "./images/screenimages/cc4.jpg",
+       "./images/screenimages/cc6.jpg",
+       "./images/screenimages/cc7.jpg",
+       "./images/screenimages/cc8.jpg",
+       "./images/screenimages/cc9.jpg",
+       "./images/screenimages/cc10.jpg",
+       "./images/screenimages/cc11.jpg",
+       "./images/screenimages/cc12.jpg",
+       "./images/screenimages/cc13.jpg",
+       "./images/menu_graphics/menu_foreground_1.jpg", 
+       ]
 
 
 previous_button_press = 0
@@ -14,7 +32,7 @@ def enable_handlers(function, ref):
     def handler(pin):
         # Software debouncing logic (100ms)
         global previous_button_press
-        if (time.ticks_ms() - previous_button_press) < 300:
+        if (time.ticks_ms() - previous_button_press) < 1000:
             previous_button_press = time.ticks_ms()
             return
         previous_button_press = time.ticks_ms()
@@ -72,7 +90,12 @@ class MaiFace(AppTemplate):
         if pin == buttons['B']: 
             self.image_index = (self.image_index+1) % len(img)
             print(img[self.image_index])
-            self.hardware["face"]["tft"].jpg(img[self.image_index], 0, 0)
+            try:
+                self.hardware["face"]["tft"].jpg(img[self.image_index], 0, 0)
+            except Exception as e:
+                print(e)
+                self.image_index = (self.image_index-1) % len(img)
+            gc.collect()
 
         ### Extra Code for ######################################################
         if pin == buttons['A']: 

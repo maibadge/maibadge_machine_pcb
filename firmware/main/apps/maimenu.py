@@ -4,6 +4,7 @@ import hardware.vga1_8x16 as smallfont
 import gc9a01
 from machine import Timer, Pin
 import time
+import gc
 
 from apps.maiface import MaiFace
 from apps.maigame import MaiGame
@@ -15,7 +16,7 @@ def enable_handlers(function, ref):
     def handler(pin):
         # Software debouncing logic (100ms)
         global previous_button_press
-        if (time.ticks_ms() - previous_button_press) < 300:
+        if (time.ticks_ms() - previous_button_press) < 1000:
             previous_button_press = time.ticks_ms()
             return
         previous_button_press = time.ticks_ms()
@@ -123,22 +124,22 @@ class MaiMenu(AppTemplate):
         elif self.apps[self.app_index] == "buzzqz":
             buzz_qzkago(self.hardware)
         elif self.apps[self.app_index] == "game":
-            self.unload()
-
-            #self.load()
+            mg = MaiGame(self.hardware)
+            mg.load()
+            self.load()
             
     
     def load(self, display=True):
         print("load")
         if display: self.display_menu()
-        self.tim0 = Timer(0)
-        self.tim0.init(period=1000, mode=Timer.PERIODIC, callback=self.touchpads)
+        #self.tim0 = Timer(0)
+        #self.tim0.init(period=1000, mode=Timer.PERIODIC, callback=self.touchpads) # Disable Touchpads
         ##########################################################################
         enable_handlers(self.on_press, self.hardware)
         ##########################################################################
         
     def unload(self):
-        self.tim0.deinit()
+        #self.tim0.deinit()
 #        mg = MaiGame(self.hardware)
 #        mg.load()        
         ##########################################################################
@@ -156,6 +157,7 @@ class MaiMenu(AppTemplate):
             mm = self
             mm.app_index = (mm.app_index+1) % len(mm.apps)
             mm.load()
+        gc.collect()
         #########################################################################
 
 
